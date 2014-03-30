@@ -46,7 +46,7 @@ module.exports = {
 								};})(s,n,[].concat(topics),done));
 							});
 						} else {
-							suite(n,function(){ console.log('suite:'+n); F(s,topics); });
+							suite(n,function(){ F(s,topics); });
 						}
 					})(s_test,n,[].concat(topics));
 				}
