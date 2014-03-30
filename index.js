@@ -7,7 +7,9 @@
  * some little test helpers to migrate some vows tests
  */
 var async = true;
-var call = async ? process.nextTick.bind(process) : function(f){ return f.apply(this,arguments); };
+var call = async && process && !process.browser && process.nextTick
+	? process.nextTick.bind(process)
+	: function(f){ return f.apply(this,arguments); };
 
 module.exports = {
 	vows : function F(suite,test,suiteSetup){
