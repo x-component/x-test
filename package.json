@@ -1,0 +1,36 @@
+{
+  "name": "x-test",
+  "version": "0.0.0",
+  "license": {
+    "type": "MIT"
+  },
+  "description": "some test utilities used by x-x.io x-components",
+  "keywords": [
+    "x-x",
+    "x-component",
+    "test"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/x-component/x-test.git"
+  },
+  "dependencies": {
+    "mocha": "~1.18",
+    "zuul": "~1.6"
+  },
+  "devDependencies": {
+    "x-publish": "~0.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "./node_modules/x-publish/scripts/prepublish.sh index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/x-component/x-test/issues"
+  },
+  "author": "",
+  "maintainers": [
+    ""
+  ],
+  "contributors": []
+}
