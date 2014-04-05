@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/x-component/x-test.png?v0.0.9)](https://travis-ci.org/x-component/x-test)
+[![Build Status](https://travis-ci.org/x-component/x-test.png?v0.0.10)](https://travis-ci.org/x-component/x-test)
 =======================================================================================================
 
 
@@ -7,4 +7,10 @@
 x-test
 ------
 
-some little test helpers to migrate some vows tests
+little test helpers to migrate some vows tests
+- we translate a topic to a suiteSetup
+- a teardown becomes as suiteTearDown
+- a object with members become a suite
+- suites are nested.
+- tests are not.
+- a suite has at least one test (as required by mocha)
