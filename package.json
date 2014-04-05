@@ -15,8 +15,7 @@
     "url": "https://github.com/x-component/x-test.git"
   },
   "dependencies": {
-    "mocha": "~1.18",
-    "zuul": "~1.6"
+    "mocha": "~1.18"
   },
   "devDependencies": {
     "x-publish": "~0.0"
