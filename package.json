@@ -1,6 +1,6 @@
 {
   "name": "x-test",
-  "version": "0.0.11",
+  "version": "1.0.0",
   "license": {
     "type": "MIT"
   },
@@ -18,11 +18,12 @@
     "mocha": "~1.18"
   },
   "devDependencies": {
-    "x-publish": "~0.0"
+    "x-publish": "1.x.x"
   },
   "main": "index.js",
+  "bin" : "scripts/test.sh",
   "scripts": {
-    "prepublish": "./node_modules/x-publish/scripts/prepublish.sh index.js"
+    "prepublish": "$(npm bin)/x-publish"
   },
   "bugs": {
     "url": "https://github.com/x-component/x-test/issues"
